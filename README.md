@@ -1,13 +1,3 @@
-Metadata-Version: 2.4
-Name: py-toml10n
-Version: 0.1.0
-Summary: Simple TOML-based localization manager
-License: MIT
-Project-URL: Repository, https://github.com/Pon4ick/py-toml10n
-Keywords: localization,l10n
-Requires-Python: >=3.0
-Description-Content-Type: text/markdown
-
 # py-toml10n
 
 Simple TOML-based localization manager for Python.

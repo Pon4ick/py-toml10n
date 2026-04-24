@@ -1,3 +1,4 @@
+README.md
 pyproject.toml
 src/py_toml10n.egg-info/PKG-INFO
 src/py_toml10n.egg-info/SOURCES.txt

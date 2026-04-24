@@ -232,6 +232,40 @@ def test_load_file():
 
     tmpdir.cleanup()
 
+# ================================================================
+# __getitem__ tests
+# ================================================================
+def test_getitem_returns_string():
+    """Should return string when accessing via bracket syntax."""
+    tmpdir = make_locale_dir({"en.toml": 'hello = "Hello"'})
+
+    mgr = LocalizationManager(tmpdir.name, default_language="en")
+    assert mgr["hello"] == "Hello"
+
+    tmpdir.cleanup()
+
+
+def test_getitem_key_not_found():
+    """Should return [[key]] when key is not found via bracket syntax."""
+    tmpdir = make_locale_dir({"en.toml": 'hello = "Hello"'})
+
+    mgr = LocalizationManager(tmpdir.name, default_language="en")
+    assert mgr["nonexistent"] == "[[nonexistent]]"
+
+    tmpdir.cleanup()
+
+
+def test_getitem_with_different_default_language():
+    """Should use default_language for bracket access."""
+    tmpdir = make_locale_dir({
+        "en.toml": 'hello = "Hello"',
+        "ru.toml": 'hello = "Привет"',
+    })
+
+    mgr = LocalizationManager(tmpdir.name, default_language="ru")
+    assert mgr["hello"] == "Привет"
+
+    tmpdir.cleanup()
 
 # ================================================================
 # Error handling tests
