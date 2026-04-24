@@ -12,7 +12,7 @@ requires-python = ">=3.0"
 keywords = ["localization", "l10n"]
 
 [project.urls]
-Repository = "https://github.com/yourusername/py-toml10n"
+Repository = "https://github.com/Pon4ick/py-toml10n"
 
 [tool.setuptools.packages.find]
 where = ["src"]
