@@ -4,7 +4,7 @@ Simple TOML-based localization manager for Python.
 
 [![PyPI version](https://img.shields.io/pypi/v/py-toml10n)](https://pypi.org/project/py-toml10n/)
 [![Tests](https://github.com/Pon4ick/py-toml10n/actions/workflows/publish.yml/badge.svg)](https://github.com/Pon4ick/py-toml10n/actions)
-[![Python versions](https://img.shields.io/pypi/pyversions/py-toml10n)](https://pypi.org/project/py-toml10n/)
+[![Python versions](https://img.shields.io/badge/python-3.11%2B-blue)](https://pypi.org/project/py-toml10n/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Installation
